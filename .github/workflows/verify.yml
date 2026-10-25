@@ -38,3 +38,5 @@ jobs:
             audit/
             data/comparison.csv
             data/model_values.csv
+            literature/*.csv
+            literature/*.json

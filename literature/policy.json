@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "method": "inverse_squared_quoted_error",
+  "arithmetic_precision_decimal_digits": 50,
+  "scope": "Descriptive reference for each q=1,2,3 and d=2..11; not a pooled confidence estimate.",
+  "exact_precedence": true,
+  "one_estimate_per_source_per_target": true,
+  "exclusions": [
+    {
+      "match": {"q": 3, "d": 3, "source_id": "BB2007", "original_printed": "0.2752724(44)"},
+      "reason": "Eq.24 is an alternative analysis from the same paper. Use the conventional equal-height estimate in Eq.14 once; retain Eq.24 as a substitution sensitivity, not an additional independent input."
+    },
+    {
+      "match": {"q": 3, "d": 3, "source_id": "W2014", "original_printed": "1.8166(5)"},
+      "reason": "The source explicitly states that accessible bond dimensions are not yet in the convergent regime."
+    }
+  ],
+  "sensitivities": [
+    {
+      "name": "BB2007_eq24_substitution",
+      "target": {"q": 3, "d": 3},
+      "replace_source_id": "BB2007",
+      "alternative_match": {"q": 3, "d": 3, "source_id": "BB2007", "original_printed": "0.2752724(44)"}
+    }
+  ],
+  "limitations": [
+    "Quoted errors are nominal weighting scales: Monte Carlo uncertainties, series spread and HOTRG convergence diagnostics are not necessarily comparable standard deviations.",
+    "W2014 q=2,d=3 remains included. Its small quoted error dominates this mean; the leave-W2014-out diagnostic gives the Monte Carlo-only alternative.",
+    "Sources can share authors, methods or data. Distinct source IDs are not a claim of statistical independence.",
+    "No pooled uncertainty, confidence interval, or physical accuracy guarantee is inferred.",
+    "Published series used by an estimator and a literature reference can overlap; their comparison is not independent validation."
+  ]
+}

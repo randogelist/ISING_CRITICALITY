@@ -1,0 +1,752 @@
+{
+  "method": "inverse_squared_quoted_error",
+  "precision_decimal_digits": 50,
+  "interpretation": "Descriptive reference for each q=1,2,3 and d=2..11; not a pooled confidence estimate.",
+  "input_file": "data/benchmarks.json",
+  "input_sha256": "a28790ec2a80ecb6c9b956bbc73f9a817b4e5c6b8d321d63b065f98b51d0e366",
+  "policy_sha256": "5d1d1a0a0321f718ba4312bd2e4ca7bae438827a559f0cde27c20c14945546b2",
+  "researched_on": "2026-10-25",
+  "limitations": [
+    "Quoted errors are nominal weighting scales: Monte Carlo uncertainties, series spread and HOTRG convergence diagnostics are not necessarily comparable standard deviations.",
+    "W2014 q=2,d=3 remains included. Its small quoted error dominates this mean; the leave-W2014-out diagnostic gives the Monte Carlo-only alternative.",
+    "Sources can share authors, methods or data. Distinct source IDs are not a claim of statistical independence.",
+    "No pooled uncertainty, confidence interval, or physical accuracy guarantee is inferred.",
+    "Published series used by an estimator and a literature reference can overlap; their comparison is not independent validation."
+  ],
+  "sources": {
+    "BDC2012": {
+      "title": "The self-dual point of the two-dimensional random-cluster model is critical for q >= 1",
+      "authors": "Vincent Beffara; Hugo Duminil-Copin",
+      "year": 2012,
+      "url": "https://arxiv.org/abs/1006.5073",
+      "location": "Theorem 1",
+      "type": "exact theorem"
+    },
+    "XWLD2014": {
+      "title": "Simultaneous analysis of three-dimensional percolation models",
+      "authors": "Xiao Xu; Junfeng Wang; Jian-Ping Lv; Youjin Deng",
+      "year": 2014,
+      "url": "https://arxiv.org/html/1310.5399v2",
+      "location": "Table IV, SC bond row",
+      "type": "Monte Carlo"
+    },
+    "WZZGD2013": {
+      "title": "Bond and Site Percolation in Three Dimensions",
+      "authors": "Junfeng Wang; Zongzheng Zhou; Wei Zhang; Timothy M. Garoni; Youjin Deng",
+      "year": 2013,
+      "url": "https://arxiv.org/pdf/1302.0421",
+      "location": "Abstract",
+      "type": "Monte Carlo"
+    },
+    "MM2018": {
+      "title": "Percolation Thresholds and Fisher Exponents in Hypercubic Lattices",
+      "authors": "Stephan Mertens; Cristopher Moore",
+      "year": 2018,
+      "url": "https://arxiv.org/pdf/1806.08067",
+      "doi": "10.1103/PhysRevE.98.022120",
+      "location": "Table II, new bond estimates",
+      "type": "invasion percolation"
+    },
+    "FXL2018": {
+      "title": "Pushing the Limits of Monte Carlo Simulations for the 3d Ising Model",
+      "authors": "Alan M. Ferrenberg; Jiahao Xu; David P. Landau",
+      "year": 2018,
+      "url": "https://arxiv.org/abs/1806.03558",
+      "location": "Abstract; Kc estimate",
+      "type": "Monte Carlo"
+    },
+    "LM2023": {
+      "title": "Revising the universality class of the four-dimensional Ising model",
+      "authors": "P. H. Lundow; K. Markstrom",
+      "year": 2023,
+      "url": "https://arxiv.org/pdf/2209.05292",
+      "location": "Section VIII.C, p.14; final Kc estimate",
+      "type": "Monte Carlo"
+    },
+    "LM2015": {
+      "title": "The discontinuity of the specific heat for the 5D Ising model",
+      "authors": "P. H. Lundow; K. Markstrom",
+      "year": 2015,
+      "url": "https://arxiv.org/pdf/1502.07613",
+      "doi": "10.1016/j.nuclphysb.2015.04.013",
+      "location": "Section III for d=5; Section IV for d=6,7",
+      "type": "Monte Carlo"
+    },
+    "BP2012": {
+      "title": "The high-temperature expansions of the higher susceptibilities for the Ising model in general dimension d",
+      "authors": "P. Butera; M. Pernici",
+      "year": 2012,
+      "url": "https://arxiv.org/pdf/1209.3592",
+      "doi": "10.1103/PhysRevE.86.011139",
+      "location": "Table II",
+      "type": "high-temperature series"
+    },
+    "JV1997": {
+      "title": "Three-dimensional 3-state Potts model revisited with new techniques",
+      "authors": "Wolfhard Janke; Ramon Villanova",
+      "year": 1997,
+      "url": "https://arxiv.org/pdf/hep-lat/9612008",
+      "doi": "10.1016/S0550-3213(96)00710-9",
+      "location": "Abstract",
+      "type": "Monte Carlo finite-size reanalysis"
+    },
+    "BB2007": {
+      "title": "Normalized entropy density of the 3D 3-state Potts model",
+      "authors": "Alexei Bazavov; Bernd A. Berg",
+      "year": 2007,
+      "url": "https://arxiv.org/pdf/hep-lat/0702018",
+      "doi": "10.1103/PhysRevD.75.094506",
+      "location": "Eq.14 (equal height); Eq.24 (equal distances)",
+      "type": "multicanonical Monte Carlo"
+    },
+    "W2014": {
+      "title": "Phase Transitions of Ferromagnetic Potts Models on the Simple Cubic Lattice",
+      "authors": "S. Wang; Z. Y. Xie; J. Chen; B. Normand; T. Xiang",
+      "year": 2014,
+      "url": "https://arxiv.org/pdf/1405.1179",
+      "location": "Tables I and II; q=3 discussion",
+      "type": "HOTRG"
+    }
+  },
+  "results": [
+    {
+      "q": 1,
+      "d": 2,
+      "status": "exact",
+      "p_mean": "0.5",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "BDC2012",
+          "p_value": "0.5",
+          "p_error": "0",
+          "nominal_weight": null,
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 1,
+      "d": 3,
+      "status": "weighted",
+      "p_mean": "0.248811835",
+      "source_count": 2,
+      "contributions": [
+        {
+          "source_id": "XWLD2014",
+          "p_value": "0.24881185",
+          "p_error": "0.00000010",
+          "nominal_weight": "100000000000000",
+          "normalized_weight": "0.5"
+        },
+        {
+          "source_id": "WZZGD2013",
+          "p_value": "0.24881182",
+          "p_error": "0.00000010",
+          "nominal_weight": "100000000000000",
+          "normalized_weight": "0.5"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [
+        {
+          "omitted_source_id": "XWLD2014",
+          "p_mean": "0.24881182",
+          "source_count": 1
+        },
+        {
+          "omitted_source_id": "WZZGD2013",
+          "p_mean": "0.24881185",
+          "source_count": 1
+        }
+      ],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 1,
+      "d": 4,
+      "status": "single",
+      "p_mean": "0.16013122000000000000000000000000000000000000000000",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "MM2018",
+          "p_value": "0.16013122",
+          "p_error": "0.00000006",
+          "nominal_weight": "277777777777777.77777777777777777777777777777777778",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 1,
+      "d": 5,
+      "status": "single",
+      "p_mean": "0.11817145000000000000000000000000000000000000000000",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "MM2018",
+          "p_value": "0.11817145",
+          "p_error": "0.00000003",
+          "nominal_weight": "1111111111111111.1111111111111111111111111111111111",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 1,
+      "d": 6,
+      "status": "single",
+      "p_mean": "0.09420165",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "MM2018",
+          "p_value": "0.09420165",
+          "p_error": "0.00000002",
+          "nominal_weight": "2500000000000000",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 1,
+      "d": 7,
+      "status": "single",
+      "p_mean": "0.07867523",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "MM2018",
+          "p_value": "0.07867523",
+          "p_error": "0.000000002",
+          "nominal_weight": "250000000000000000",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 1,
+      "d": 8,
+      "status": "single",
+      "p_mean": "0.067708418100000000000000000000000000000000000000000",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "MM2018",
+          "p_value": "0.0677084181",
+          "p_error": "0.0000000003",
+          "nominal_weight": "11111111111111111111.111111111111111111111111111111",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 1,
+      "d": 9,
+      "status": "single",
+      "p_mean": "0.0594960034",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "MM2018",
+          "p_value": "0.0594960034",
+          "p_error": "0.0000000001",
+          "nominal_weight": "100000000000000000000",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 1,
+      "d": 10,
+      "status": "single",
+      "p_mean": "0.0530925842",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "MM2018",
+          "p_value": "0.0530925842",
+          "p_error": "0.0000000002",
+          "nominal_weight": "25000000000000000000",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 1,
+      "d": 11,
+      "status": "single",
+      "p_mean": "0.04794968373",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "MM2018",
+          "p_value": "0.04794968373",
+          "p_error": "0.00000000008",
+          "nominal_weight": "156250000000000000000",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 2,
+      "d": 2,
+      "status": "exact",
+      "p_mean": "0.58578643762690495119831127579030192143032812462304",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "BDC2012",
+          "p_value": "0.58578643762690495119831127579030192143032812462304",
+          "p_error": "0",
+          "nominal_weight": null,
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 2,
+      "d": 3,
+      "status": "weighted",
+      "p_mean": "0.35809124556465178898285778156515384730124429831175",
+      "source_count": 2,
+      "contributions": [
+        {
+          "source_id": "FXL2018",
+          "p_value": "0.35809133514883687158720196370338185105422371556647",
+          "p_error": "0.00000000641908664851163139111275783816003675984799",
+          "nominal_weight": "24269091766986241.921047159904909223317669907237817",
+          "normalized_weight": "0.0095629882265650108449360333406792058885902515112894"
+        },
+        {
+          "source_id": "W2014",
+          "p_value": "0.35809124469968763977622774017676846175013426484598",
+          "p_error": "0.000000000630749068814864236841432578021455717069825",
+          "nominal_weight": "2513545573691784041.9006160249296939402033791470230",
+          "normalized_weight": "0.99043701177343498915506396665932079411140974848872"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [
+        {
+          "omitted_source_id": "FXL2018",
+          "p_mean": "0.35809124469968763977622774017676846175013426484598",
+          "source_count": 1
+        },
+        {
+          "omitted_source_id": "W2014",
+          "p_mean": "0.35809133514883687158720196370338185105422371556647",
+          "source_count": 1
+        }
+      ],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 2,
+      "d": 4,
+      "status": "single",
+      "p_mean": "0.25872794105749211369047622716432603205722720742327",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "LM2023",
+          "p_value": "0.25872794105749211369047622716432603205722720742327",
+          "p_error": "0.00000001482544117885015871455322071339068087214206",
+          "nominal_weight": "4549720815612012.8691813469400353042757135890925287",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 2,
+      "d": 5,
+      "status": "weighted",
+      "p_mean": "0.20374035888188988685202666552277738594287888691774",
+      "source_count": 2,
+      "contributions": [
+        {
+          "source_id": "LM2015",
+          "p_value": "0.20374035568534164133799377343237618624492094222508",
+          "p_error": "0.000000031850385772586342839916455085728124419832725",
+          "nominal_weight": "985758671659860.58576675218588729688638343431914344",
+          "normalized_weight": "0.99960015191036735625567688561078213171224099520503"
+        },
+        {
+          "source_id": "BP2012",
+          "p_value": "0.20374835009203857173524197079349988335222758474133",
+          "p_error": "0.00000159250329981698452539606021931779321947775663",
+          "nominal_weight": "394311386356.56284121969412711420856181179127518813",
+          "normalized_weight": "0.00039984808963264374432311438921786828775900479496790"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [
+        {
+          "omitted_source_id": "LM2015",
+          "p_mean": "0.20374835009203857173524197079349988335222758474133",
+          "source_count": 1
+        },
+        {
+          "omitted_source_id": "BP2012",
+          "p_mean": "0.20374035568534164133799377343237618624492094222508",
+          "source_count": 1
+        }
+      ],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 2,
+      "d": 6,
+      "status": "weighted",
+      "p_mean": "0.16856018729890372592566117416093546536790156916958",
+      "source_count": 2,
+      "contributions": [
+        {
+          "source_id": "LM2015",
+          "p_value": "0.16856021475928564031587347135558517548071513531254",
+          "p_error": "0.000000498863871144458547642744583442370504102589645",
+          "nominal_weight": "4018240207796.8552394128331860299793820021511647579",
+          "normalized_weight": "0.91743125326158164792067882064687496464428624551502"
+        },
+        {
+          "source_id": "BP2012",
+          "p_value": "0.16855988218330502883844164862676219254956803726757",
+          "p_error": "0.000001662880235634498529146872517758722443842469825",
+          "nominal_weight": "361641329388.09894398104445734457368055624714034160",
+          "normalized_weight": "0.082568746738418352079321179353125035355713754484982"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [
+        {
+          "omitted_source_id": "LM2015",
+          "p_mean": "0.16855988218330502883844164862676219254956803726757",
+          "source_count": 1
+        },
+        {
+          "omitted_source_id": "BP2012",
+          "p_mean": "0.16856021475928564031587347135558517548071513531254",
+          "source_count": 1
+        }
+      ],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 2,
+      "d": 7,
+      "status": "weighted",
+      "p_mean": "0.14394333352854470358329511812749888175407656746273",
+      "source_count": 2,
+      "contributions": [
+        {
+          "source_id": "LM2015",
+          "p_value": "0.14394204440676492044422318717954492830048768950953",
+          "p_error": "0.00000136969272894976052952026129046385709537233681",
+          "nominal_weight": "533032512032.22212702503994037982918029035886062560",
+          "normalized_weight": "0.058823352249340769310475181598277769472577815854581"
+        },
+        {
+          "source_id": "BP2012",
+          "p_value": "0.14394341409839811602159313277811159049116622583835",
+          "p_error": "0.000000342422634360649884861612364048567962140387515",
+          "nominal_weight": "8528547483830.6589901234124173097810346094144367619",
+          "normalized_weight": "0.94117664775065923068952481840172223052742218414542"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [
+        {
+          "omitted_source_id": "LM2015",
+          "p_mean": "0.14394341409839811602159313277811159049116622583835",
+          "source_count": 1
+        },
+        {
+          "omitted_source_id": "BP2012",
+          "p_mean": "0.14394204440676492044422318717954492830048768950953",
+          "source_count": 1
+        }
+      ],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 2,
+      "d": 8,
+      "status": "single",
+      "p_mean": "0.12568101629698253532637132658688805725624920495669",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "BP2012",
+          "p_value": "0.12568101629698253532637132658688805725624920495669",
+          "p_error": "0.00000174863796740720068799219493659751771121224791",
+          "nominal_weight": "327039486641.01475267238915845181641350786922277653",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 2,
+      "d": 9,
+      "status": "single",
+      "p_mean": "0.11156696248880089585302294275653129220270780422127",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "BP2012",
+          "p_value": "0.11156696248880089585302294275653129220270780422127",
+          "p_error": "0.000001776866075023582785677302616874610054679900165",
+          "nominal_weight": "316731026818.71395118205300158137704898353555551941",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 2,
+      "d": 10,
+      "status": "single",
+      "p_mean": "0.10031987904859117768671326009970173659391445688467",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "BP2012",
+          "p_value": "0.10031987904859117768671326009970173659391445688467",
+          "p_error": "0.000001799360241904017218121175598145046496197239785",
+          "nominal_weight": "308861488111.46763838155500282684327580677621060755",
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 2,
+      "d": 11,
+      "status": "missing",
+      "p_mean": null,
+      "source_count": 0,
+      "contributions": [],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 3,
+      "d": 2,
+      "status": "exact",
+      "p_mean": "0.63397459621556135323627682924706381652859737309481",
+      "source_count": 1,
+      "contributions": [
+        {
+          "source_id": "BDC2012",
+          "p_value": "0.63397459621556135323627682924706381652859737309481",
+          "p_error": "0",
+          "nominal_weight": null,
+          "normalized_weight": "1"
+        }
+      ],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 3,
+      "d": 3,
+      "status": "weighted",
+      "p_mean": "0.42337624678153801111944100548905245941676946973537",
+      "source_count": 2,
+      "contributions": [
+        {
+          "source_id": "JV1997",
+          "p_value": "0.42337607419131753647794271492393134354843324949892",
+          "p_error": "0.000005766239258182928622855833781285871158176371555",
+          "nominal_weight": "30075626501.856929773362195805795051410584424218408",
+          "normalized_weight": "0.25172089091412649463537837459608832321691558545354"
+        },
+        {
+          "source_id": "BB2007",
+          "p_value": "0.42337630484084173004301408374332408401330211657537",
+          "p_error": "0.00000334441743194186899948553213492210381753036063",
+          "nominal_weight": "89404430924.592832498207585586152790647446310361443",
+          "normalized_weight": "0.74827910908587350536462162540391167678308441454647"
+        }
+      ],
+      "excluded": [
+        {
+          "source_id": "BB2007",
+          "original_printed": "0.2752724(44)",
+          "reason": "Eq.24 is an alternative analysis from the same paper. Use the conventional equal-height estimate in Eq.14 once; retain Eq.24 as a substitution sensitivity, not an additional independent input."
+        },
+        {
+          "source_id": "W2014",
+          "original_printed": "1.8166(5)",
+          "reason": "The source explicitly states that accessible bond dimensions are not yet in the convergent regime."
+        }
+      ],
+      "leave_one_source_out": [
+        {
+          "omitted_source_id": "JV1997",
+          "p_mean": "0.42337630484084173004301408374332408401330211657537",
+          "source_count": 1
+        },
+        {
+          "omitted_source_id": "BB2007",
+          "p_mean": "0.42337607419131753647794271492393134354843324949892",
+          "source_count": 1
+        }
+      ],
+      "sensitivity_alternatives": [
+        {
+          "name": "BB2007_eq24_substitution",
+          "p_mean": "0.42336950987911547693563513095503597339235350066073",
+          "source_count": 2,
+          "contributions": [
+            {
+              "source_id": "JV1997",
+              "p_value": "0.42337607419131753647794271492393134354843324949892",
+              "p_error": "0.000005766239258182928622855833781285871158176371555",
+              "nominal_weight": "30075626501.856929773362195805795051410584424218408",
+              "normalized_weight": "0.43643915226685371057160987538186180150174988547676"
+            },
+            {
+              "source_id": "BB2007",
+              "p_value": "0.42336442627037259561641539638642299130395399012506",
+              "p_error": "0.00000507439304888621465819257754371667600859323957",
+              "nominal_weight": "38835758614.819474534076945648590439577646586934776",
+              "normalized_weight": "0.56356084773314628942839012461813819849825011452324"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 3,
+      "d": 4,
+      "status": "missing",
+      "p_mean": null,
+      "source_count": 0,
+      "contributions": [],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 3,
+      "d": 5,
+      "status": "missing",
+      "p_mean": null,
+      "source_count": 0,
+      "contributions": [],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 3,
+      "d": 6,
+      "status": "missing",
+      "p_mean": null,
+      "source_count": 0,
+      "contributions": [],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 3,
+      "d": 7,
+      "status": "missing",
+      "p_mean": null,
+      "source_count": 0,
+      "contributions": [],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 3,
+      "d": 8,
+      "status": "missing",
+      "p_mean": null,
+      "source_count": 0,
+      "contributions": [],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 3,
+      "d": 9,
+      "status": "missing",
+      "p_mean": null,
+      "source_count": 0,
+      "contributions": [],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 3,
+      "d": 10,
+      "status": "missing",
+      "p_mean": null,
+      "source_count": 0,
+      "contributions": [],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    },
+    {
+      "q": 3,
+      "d": 11,
+      "status": "missing",
+      "p_mean": null,
+      "source_count": 0,
+      "contributions": [],
+      "excluded": [],
+      "leave_one_source_out": [],
+      "sensitivity_alternatives": []
+    }
+  ]
+}
