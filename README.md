@@ -12,7 +12,7 @@ $$Z_G(q,v)=\sum_{A\subseteq E}q^{k(A)}v^{|A|},\qquad (R+1)C_R(q,v_R)=Z_R(q,v_R),
 
 where $C_R$ restricts the wired-box sum to configurations connecting the center to the boundary. The numerical finite-box implementation uses the equivalent integer-spin representation for q=2,3.
 
-**Proof scope:** The Lean sources cover finite partition identities, the odds conversion, exact rounding of the approximation formulas, and a finite-root convergence theorem **under explicitly stated monotonicity, decay and threshold assumptions**. The FK infinite-volume facts and equality of the approximation formulas with physical $p_c$ remain open in this repository. Eight certified decimals of a formula do not certify eight physical decimals. See [formal scope](docs/formal-scope.md). **CI validation is pending** until the linked GitHub Actions run passes; earlier local receipts are historical evidence only.
+**Proof scope:** The Lean sources cover finite partition identities, the odds conversion, exact rounding of the approximation formulas, and a finite-root convergence theorem **under explicitly stated monotonicity, decay and threshold assumptions**. The FK infinite-volume facts and equality of the approximation formulas with physical $p_c$ remain open in this repository. Eight certified decimals of a formula do not certify eight physical decimals. See [formal scope](docs/formal-scope.md). **[CI verified](https://github.com/randogelist/ISING_CRITICALITY/actions/runs/40174368336):** all 17 Lean modules compiled, the axiom audit passed with standard axioms only, and the C++ tests and numerical table reproduction passed for source commit `6938db28d6b01da3dd1037a58d42bdf00b7dda3d`. See the [CI proof receipt](audit/build-receipt.json).
 
 ## Numerical front page
 

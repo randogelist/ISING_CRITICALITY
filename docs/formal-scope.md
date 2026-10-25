@@ -1,9 +1,13 @@
 # Formal scope
 
-Lean compilation and axiom auditing are restricted to GitHub Actions. The first
-CI validation of this repository is pending; earlier local receipts do not establish
-a CI pass. The statements below describe the source-level proof scope and preserve
-the inherited certificate separately from the open physical identification.
+Lean compilation and axiom auditing are restricted to GitHub Actions.
+[CI run 40174368336](https://github.com/randogelist/ISING_CRITICALITY/actions/runs/40174368336)
+passed for source commit `6938db28d6b01da3dd1037a58d42bdf00b7dda3d`: all 17 modules
+compiled and the audit allowed only `propext`, `Classical.choice`, and `Quot.sound`.
+The [downloaded proof receipt](../audit/build-receipt.json) records the compiler,
+Mathlib pin, run identity, and source hashes. Earlier local receipts are historical
+only. The statements below preserve the distinction between the certified formula
+and the open physical identification.
 
 ## Exact finite object
 

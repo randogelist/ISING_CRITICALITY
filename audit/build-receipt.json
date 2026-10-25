@@ -1,0 +1,164 @@
+{
+  "verified_at": "2026-10-25T07:54:03.489326+00:00",
+  "lean": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "compile_flags": [
+    "-o"
+  ],
+  "modules": [
+    {
+      "module": "PCD.Q3Defs",
+      "identity": "b085c702b3165ad080174282391f66c620ef6e69618e44dc6d2ca37ba9887bce",
+      "source_sha256": "23b46dee60add71c3ce91b67d594adf82a7559744c4e71a9715402c21882e4ca",
+      "olean_sha256": "654d6cb9f62c066aa67a9287b6203beb4b34912238e8f445904468d55590994d",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3BaseBounds",
+      "identity": "14bd9a5a25092243e3418e9c0e66031af4ddc315ce7f4f1717c9d12e16e8cf55",
+      "source_sha256": "130d68686cf534b1c7fcbd152625e8d4c96f48787c7ebda893f51ae1f1a5ef82",
+      "olean_sha256": "4a502993ffa6b72aecce60645fd7f758a7ae81c506dde620c7455272be78bbdc",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3D3",
+      "identity": "d74311c2ce6fd81d82898bcf38eaaa5e9a9409dede698da683bff53441a927ea",
+      "source_sha256": "21fdec92080437b580e8b20332508222573ca8e13672476ed48ce2d3867f0fc8",
+      "olean_sha256": "b2502805e9d235c27d08d26111d6cb21ec4cade67bf67b064bdfd44bf71c916a",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3D4",
+      "identity": "01d50d2a2313bf6ef561d0996c579836b33cab7039a907713d67be3a7ae8aef7",
+      "source_sha256": "1c7aa1a731bf7155395bf140420d0d5b0a74be57bb5262bbd3f1769b96e2b759",
+      "olean_sha256": "ae62301791bc477ca730ef8f31dceada5cb737ad2feda686b08c736738778138",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3D5",
+      "identity": "720b2183dfee78a16c81629096f890bcae788f2b21e6589f648b954a9f9a1856",
+      "source_sha256": "f4a8236af12cc3bcefe3c6cfbaec098c4b089dbf6f31acf67ca75369624c9d99",
+      "olean_sha256": "707a06a5416b28ddb6043326973e106304d62dff4997cac5b58491f32266658b",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3D6",
+      "identity": "90a35d5a0790affbd077dde275e64be0606f5d458e3dbfe289b17a0071da31c0",
+      "source_sha256": "e7148e4bde5efc0666226d43b38b4966424338e6d0665bd8e810b9f0dd578984",
+      "olean_sha256": "aeaa988f1fe6c9a85dd1e694d595602af27c3cfaa8a98400106781bae3f63577",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3D7",
+      "identity": "b6092586cf1a93b3ddd32be9f54365e17496577da94a1f9f6b81c87b1796017b",
+      "source_sha256": "cc35ddc90b9c718f7962b8473757c19c7d05cf1e953bf902cfd3501b1527a2f1",
+      "olean_sha256": "1b094fa2a07feac75dfab2ee238e4e17abdfb78f71023baaceff538a06c30fa7",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3D8",
+      "identity": "12b6e0ea5659370e4b43af19f0e8d11dd212cf0488975a49ec7823844f9894db",
+      "source_sha256": "a3f55c1938dee0f90928c97ccac6c74511864625fb7e38b00d360616f6be6df9",
+      "olean_sha256": "58f564bf92a3e0ea832eb8cbc0d31df701aa66db266d4e05543eefb73cdada2c",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3D9",
+      "identity": "522b87948b6c4901750e63dfc6560817ba809f08bdce63c0db23c9bb756c4d4e",
+      "source_sha256": "522a804e75671e1cf9c3aac07c155c3fe343a3bc2856a92ce5bfc3e5ef05ced5",
+      "olean_sha256": "e9d06ab8837eda9166e3ec70d5ee50815e6322094eaaa6bdbbf1fb06454dbdb2",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3D10",
+      "identity": "0186d122d2915be86f3739ec3b00662fe342713075ecaff9e7c914a94fd6cdd4",
+      "source_sha256": "a7fe31ac509b26daaff9df9e0cb56f698174a698668da5babcc40a4384141e6c",
+      "olean_sha256": "afb24be2a798bb142969fcde22972ba4ce378b71ce7f0d08c30ef2b589954493",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3D11",
+      "identity": "73e738d2c82b0075ba5d511a2c725b7c39714000b8c760fa69a9eb14b23bfd71",
+      "source_sha256": "023860405e47ef67992d1bd997dbaa663f41244aa1ac02e2c41e457aa151e646",
+      "olean_sha256": "e2b90acefdbdfdd11c928298f013ba748fcd5ae8811a5da26fdd6e8bcc582e4a",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "PCD.Q3Aggregate",
+      "identity": "01493fe5f9dbff180043c3186ced2bd9354a073a3d0d7310a7ece8db27cd8a36",
+      "source_sha256": "c85d36869959425ba3f5c5bfa495e62cca80afe049475495158839ec6f909fb5",
+      "olean_sha256": "8202d748551624d62557a716d46344e33c93a25d87a45566a96e77de3310f836",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "IsingCriticality.Approximants",
+      "identity": "6eb712a3a59def99f5382c63fd789535259a8b5d864325a7d6403f8e8eca2148",
+      "source_sha256": "2d71947c04f5ae8917b0f8beda1f67b9398b922bc332f835d749d19bb8b5a14a",
+      "olean_sha256": "b3bb6b74d889931cd18e11d29966db0e322b8afbdc22dd297cf3404cf3d28470",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "IsingCriticality.FinitePartition",
+      "identity": "ee2a279be7baa0759284291336cae63fbe9ed19c5b68544bf0598ce955dfecdb",
+      "source_sha256": "33322547ad018842bf7cf1f8689aee2eabf354b37c37356fe0168916822fa4ca",
+      "olean_sha256": "6ed348983cbe28d873cad51bef1f539a4c7730cdec09f552b489fe9356d2ee47",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "IsingCriticality.Identification",
+      "identity": "67e6b26d7f582733bf45bbb2f12cc8b670a1483d89cf87c9382e3df1224b5383",
+      "source_sha256": "3b6a52bdd8659b935df272d80e7bfa33a750df1faf414d511be211fb3ecfcb03",
+      "olean_sha256": "88cdf47bd705c19c1f05e6848f6c9f544e5cd91fda2d51fcef7bd58fd1e06b91",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "IsingCriticality",
+      "identity": "a23c3d7efaee1eb4bceeca78c85806f6f221f5c88995ff2e8f4d6fb21c46b6b0",
+      "source_sha256": "13dd9e84fd4dfbe084467a76f83552992874fcab3f4fddc9e20a765dbdc22d19",
+      "olean_sha256": "d55195c4507d93c056b4a43f75c91f8e15b20387cb28fe1522cf03873125c64d",
+      "result": "PASS",
+      "cache_reused": false
+    },
+    {
+      "module": "Audit",
+      "identity": "577a67373a23c7088d0a0af92c03314551cdfce8f4bdb68af2b4f4114915ecf9",
+      "source_sha256": "9a6dd316039513a2d41d8c4c535ed7ce7a6b461b74d4f98911daab5c770b436f",
+      "olean_sha256": "b59b79beebf4641dfc325cacb5410cf61256233961aa4cb0ab2bff7898641535",
+      "result": "PASS",
+      "cache_reused": false
+    }
+  ],
+  "new_compiled": 17,
+  "frozen_reused": 0,
+  "axioms_allowed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "physical_identification": "CONDITIONAL_ONLY",
+  "formula_precision": "q3 d3..11 nearest 1e-8",
+  "result": "PASS",
+  "execution_environment": "github_actions",
+  "repository": "randogelist/ISING_CRITICALITY",
+  "commit": "6938db28d6b01da3dd1037a58d42bdf00b7dda3d",
+  "run_id": "40174368336",
+  "run_attempt": "1",
+  "run_url": "https://github.com/randogelist/ISING_CRITICALITY/actions/runs/40174368336",
+  "runner_os": "Linux",
+  "runner_arch": "X64"
+}

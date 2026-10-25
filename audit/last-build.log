@@ -1,0 +1,96 @@
+--- PCD.Q3Defs ---
+
+--- PCD.Q3BaseBounds ---
+
+--- PCD.Q3D3 ---
+
+--- PCD.Q3D4 ---
+
+--- PCD.Q3D5 ---
+
+--- PCD.Q3D6 ---
+
+--- PCD.Q3D7 ---
+
+--- PCD.Q3D8 ---
+
+--- PCD.Q3D9 ---
+
+--- PCD.Q3D10 ---
+
+--- PCD.Q3D11 ---
+
+--- PCD.Q3Aggregate ---
+
+--- IsingCriticality.Approximants ---
+
+--- IsingCriticality.FinitePartition ---
+
+--- IsingCriticality.Identification ---
+
+--- IsingCriticality ---
+
+--- Audit ---
+'PCD.q3_all_d3_to_d11_round_to_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PCD.Q3_SQUARELOOP_8DIGIT_CERTIFIED' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_solves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q1_d3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_d3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_d3_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q1_d3_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q1_d4_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q1_d5_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q1_d6_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q1_d7_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q1_d8_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q1_d9_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q1_d10_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q1_d11_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_d4_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_d5_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_d6_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_d7_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_d8_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_d9_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_d10_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_q2_d11_rounds8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.probabilityOfActivity_mem_Ico' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.probabilityOfActivity_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.probabilityOfActivity_strictMonoOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.activity_probability_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.probability_activity_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.probability_exp_activity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.evaluate_pottsPartitionPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.pottsPartition_eq_boltzmann' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.pottsPartition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.probabilityPartition_eq_activity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.evaluate_boxPartitionPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.evaluate_restrictedPartitionPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.restrictedPartition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.wiredStates_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.evaluate_wiredPartitionPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.evaluate_wiredCenterPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.wiredPartition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.wiredMagnetization_root_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.wiredProbabilityPartition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.restrictedProbabilityPartition_eq_activity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.wiredObservable_eq_activity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.pcInf_le_of_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.theta_zero_below_pcInf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.theta_positive_above_pcInf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.crossingRoots_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.finiteRoot_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.finiteRoot_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.quadratic_bound_eventually_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.positive_bound_eventually_above' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.finiteRoots_tendsto_of_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.finiteRoots_tendsto_pcInf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.wiredInfiniteObservable_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.wiredInfiniteObservable_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.wiredInfiniteObservable_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.concreteWiredRoots_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.canonicalWiredRoot_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.canonicalWiredRoots_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+AXIOM_AUDIT_END

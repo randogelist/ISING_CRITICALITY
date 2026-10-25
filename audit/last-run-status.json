@@ -1,5 +1,13 @@
 {
-  "status": "CI_PENDING",
-  "execution_policy": "GITHUB_ACTIONS_ONLY",
-  "workflow_url": "https://github.com/randogelist/ISING_CRITICALITY/actions/workflows/verify.yml"
+  "status": "PASS",
+  "started_at": "2026-10-25T07:53:12.206943+00:00",
+  "execution_environment": "github_actions",
+  "repository": "randogelist/ISING_CRITICALITY",
+  "commit": "6938db28d6b01da3dd1037a58d42bdf00b7dda3d",
+  "run_id": "40174368336",
+  "run_attempt": "1",
+  "run_url": "https://github.com/randogelist/ISING_CRITICALITY/actions/runs/40174368336",
+  "runner_os": "Linux",
+  "runner_arch": "X64",
+  "finished_at": "2026-10-25T07:54:03.489614+00:00"
 }
