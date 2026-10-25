@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "cpp_arithmetic": "GCC __float128, 113 binary significand bits",
+  "oracle": "Python Fraction exact Pade systems plus Decimal(80) Newton refinement of each reported simple pole",
+  "approximants": 140,
+  "counts_by_dimension": {
+    "3": 20,
+    "4": 15,
+    "5": 15,
+    "6": 15,
+    "7": 15,
+    "8": 15,
+    "9": 15,
+    "10": 15,
+    "11": 15
+  },
+  "maximum_p_discrepancy": "4.8987689670614491842785080771566906731100702025249306951391400E-19",
+  "header_sha256": "28d03c0f282bd81ec9c68e248a00f7807daf8cdecd968cc5dfb00623b03d8a47",
+  "coefficient_data_sha256": "fb3bfe1e1c0d28d5e02a391d906bb68ebc18e51a54ad0cd493da97050c0b3afb",
+  "ht20_data_sha256": "e6634ac39514dea794e092787c625a15101ea077a72e122084943ead08cc838d",
+  "ht20_header_sha256": "69b2fb17e184990ec9c24fe02884c48319967155217c97660acc2f340c8404f8",
+  "scope": "Arithmetic consistency only. Does not certify root selection, asymptotic convergence, or physical p_c error."
+}

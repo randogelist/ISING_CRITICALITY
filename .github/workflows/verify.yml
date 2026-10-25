@@ -1,0 +1,40 @@
+name: Verify Lean and C++
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean through elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Restore Mathlib and project compilation cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .lake
+            ~/.cache/mathlib
+            audit/build-receipt.json
+          key: lean-ci-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'scripts/build_lean.py') }}-${{ hashFiles('**/*.lean') }}
+          restore-keys: lean-ci-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'scripts/build_lean.py') }}-
+      - name: Fetch pinned dependencies and precompiled Mathlib
+        run: |
+          lake update
+          lake exe cache get
+      - name: Compile and audit Lean
+        run: python3 scripts/build_lean.py
+      - name: Compile, test and reproduce numerical tables
+        run: make test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: proof-and-numerical-receipts
+          path: |
+            audit/
+            data/comparison.csv
+            data/model_values.csv

@@ -1,0 +1,5 @@
+{
+  "status": "CI_PENDING",
+  "execution_policy": "GITHUB_ACTIONS_ONLY",
+  "workflow_url": "https://github.com/randogelist/ISING_CRITICALITY/actions/workflows/verify.yml"
+}

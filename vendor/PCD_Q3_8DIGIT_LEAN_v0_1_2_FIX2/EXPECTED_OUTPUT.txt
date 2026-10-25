@@ -1,0 +1,11 @@
+Target successful tail:
+COMPILE_Q3_D3=PASS
+...
+COMPILE_Q3_D11=PASS
+COMPILE_Q3_AGGREGATE=PASS
+COMPILE_MAIN=PASS
+LEAN_AXIOM_AUDIT=PASS_NO_SORRYAX
+PROJECT_BUILD=PASS
+RUN=PASS
+
+The Main audit should list only standard Lean/Mathlib dependencies if any; it must contain no sorryAx.

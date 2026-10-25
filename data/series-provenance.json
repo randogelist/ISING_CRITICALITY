@@ -1,0 +1,66 @@
+{
+  "retrieved_date": "2026-10-25",
+  "sources": [
+    {
+      "key": "HJ2006",
+      "url": "https://arxiv.org/pdf/cond-mat/0607423",
+      "doi": "10.1103/PhysRevE.74.051113",
+      "equation": "12",
+      "pdf_page": 6,
+      "sha256": "cbd13386d3a765f27304bbd3a3aa7078855a151034d785939036178ba5c03009",
+      "variable": "u=(exp(K_Potts)-1)/(exp(K_Potts)-1+q); sigma=2d-1",
+      "coefficients_a_j": [
+        "1",
+        "0",
+        "(8-3q)/2",
+        "3(8-3q)/2",
+        "3(68-31q+q^2)/2",
+        "(8664-3798q-11q^2)/12",
+        "(78768-36714q+405q^2-50q^3)/12",
+        "(1476192-685680q-2760q^2-551q^3)/24",
+        "(7446864-3524352q-11204q^2-6588q^3-9q^4)/12"
+      ],
+      "formula": "u=sigma^-1 sum a_j sigma^-j; p=q*u/(1+(q-1)*u)",
+      "restrictions": "Implemented q=1,2,d>=3 only. Susceptibility singularity not physical coexistence for q=3."
+    },
+    {
+      "key": "BP2012",
+      "url": "https://arxiv.org/pdf/1209.3592",
+      "doi": "10.1103/PhysRevE.86.011139",
+      "equation": "12",
+      "pdf_page": 8,
+      "sha256": "25afcfbbdbf6bf029b129828a24e8a095e6988d1dfaa9ec802417f06db9e9570",
+      "variable": "z=2d is called q in source; Ising coupling K",
+      "coefficients_b_j": [
+        "1",
+        "-1",
+        "-4/3",
+        "-13/3",
+        "-979/45",
+        "-2009/15",
+        "-176749/189",
+        "-6648736/945",
+        "-765907148/14175",
+        "-5446232381/14175",
+        "-829271458256/467775",
+        "164976684314/22275",
+        "6495334834824112/638512875"
+      ],
+      "formula": "T=sum b_j z^-j; K=1/(z*T); p=1-exp(-2K)",
+      "restrictions": "q=2 only; d>=3 but strong low-dimensional error; no remainder bound"
+    }
+  ],
+  "deliverables": [
+    "ISING_CRITICALITY/numerics/series.hpp",
+    "ISING_CRITICALITY/docs/literature-series.md",
+    "ISING_CRITICALITY/data/ising_susceptibility_ht20.csv",
+    "ISING_CRITICALITY/data/ising_susceptibility_ht20_polynomials.json"
+  ],
+  "verification": [
+    "Header compiles with g++ -std=c++17 -Wall -Wextra -Werror -O2",
+    "HT20 exact rational arithmetic, d1 all coefficients after c0 equal2",
+    "HT20 d2 c0..12 equal known exact sequence",
+    "HT20 d3 c0..20 agree with independent recovered Arisue 32-order sequence"
+  ],
+  "status": "Literature-input asymptotic approximants, not a formal proof or physical enclosure; no benchmark threshold calibration"
+}
