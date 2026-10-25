@@ -1,15 +1,15 @@
 # Weighted literature reference
 
 The front page uses a **descriptive weighted mean** of the recorded literature
-estimates for each \((q,d)\). It is not a new critical-threshold calculation or
+estimates for each $(q,d)$. It is not a new critical-threshold calculation or
 a pooled accuracy claim. Model predictions never enter the weights.
 
-For converted probabilities \(p_i\) and quoted error scales \(u_i>0\),
+For converted probabilities $p_i$ and quoted error scales $u_i>0$,
 
-\[
+$$
 w_i=u_i^{-2},\qquad a_i=\frac{w_i}{\sum_jw_j},\qquad
 \bar p=\sum_i a_i p_i.
-\]
+$$
 
 The calculation uses Python's standard-library `Decimal` at 50-digit working
 precision. Printed source values are read directly from
@@ -18,17 +18,17 @@ are not used. Many displayed arithmetic digits do not imply physical accuracy.
 
 | Source variable | Conversion to FK probability |
 |---|---|
-| \(p\) | unchanged |
-| Ising \(K\), BB2007 \(\beta\) | \(1-e^{-2K}\), \(1-e^{-2\beta}\) |
-| Potts \(K\) | \(1-e^{-K}\) |
-| Ising \(T\) | \(1-e^{-2/T}\) |
-| Potts \(T\) | \(1-e^{-1/T}\) |
+| $p$ | unchanged |
+| Ising $K$, BB2007 $\beta$ | $1-e^{-2K}$, $1-e^{-2\beta}$ |
+| Potts $K$ | $1-e^{-K}$ |
+| Ising $T$ | $1-e^{-2/T}$ |
+| Potts $T$ | $1-e^{-1/T}$ |
 
-For a printed input \(x\pm\delta\) and its conversion \(f\), use
-\(p_i=f(x)\) and
-\(u_i=|f(x+\delta)-f(x-\delta)|/2\). The converted interval endpoints are
+For a printed input $x\pm\delta$ and its conversion $f$, use
+$p_i=f(x)$ and
+$u_i=|f(x+\delta)-f(x-\delta)|/2$. The converted interval endpoints are
 retained in the audit. Exact square-lattice values
-\(\sqrt q/(1+\sqrt q)\) take precedence at \(d=2\), avoiding an infinite
+$\sqrt q/(1+\sqrt q)$ take precedence at $d=2$, avoiding an infinite
 inverse-error weight. A single eligible estimate remains unchanged; missing
 references remain missing.
 

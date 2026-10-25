@@ -45,9 +45,9 @@ rigorous confidence interval.
 
 `--finite d R q` computes a different object: the root of
 
-\[
+$$
 W_R(p)=\frac1{R+1}
-\]
+$$
 
 in the nearest-neighbor wired box `[-R,R]^d`, for integer `q=2,3`. All boundary
 spins are fixed to color zero. The code enumerates all `q^((2R-1)^d)` interior
@@ -56,9 +56,9 @@ edges. Boundary-to-boundary edges contribute a common factor and are omitted.
 With `y=1-p`, the histograms are polynomials in `y`; the connection probability
 is calculated using the Edwards–Sokal identity
 
-\[
+$$
 W_R(p)=\frac{q\Pr(\sigma_0=0)-1}{q-1}.
-\]
+$$
 
 Histogram coefficients are exact integers. Polynomial evaluations and bisection
 are floating-point calculations. The finite root is not the infinite-volume
@@ -72,9 +72,9 @@ The self-test checks all nine q=3 rounded values against the attached Lean
 certificate, exact q=1/q=2 rational examples, probability-coordinate conversions,
 and finite roots against a separately derived one-free-spin formula:
 
-\[
+$$
 r_1(d,q)=1-(q+1)^{-1/(2d)}.
-\]
+$$
 
 It also checks histogram counts and an R=2 root residual. These runtime checks
 include an independent enumeration of all FK bond subsets of a small wired
