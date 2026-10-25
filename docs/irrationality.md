@@ -83,6 +83,12 @@ witness or unconditional higher-dimensional irrationality result is claimed.
 
 ## Verification
 
+[CI run 40176094806](https://github.com/randogelist/ISING_CRITICALITY/actions/runs/40176094806)
+passed for source commit `afe998c18dd8137c373982f7b6c7f944145af573`: 18 modules,
+3 compiled and 15 reused with matching fingerprints. The new arithmetic theorems
+use only `propext`, `Classical.choice`, and `Quot.sound`.
+The [proof receipt](../audit/build-receipt.json) records the exact source hashes.
+
 The new Lean module is included in the normal build and every public theorem
 above is included in [Audit.lean](../Audit.lean). Compilation and axiom checking
 run only in [GitHub CI](https://github.com/randogelist/ISING_CRITICALITY/actions/workflows/verify.yml).

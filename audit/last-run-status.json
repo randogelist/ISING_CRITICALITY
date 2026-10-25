@@ -1,13 +1,13 @@
 {
   "status": "PASS",
-  "started_at": "2026-10-25T07:53:12.206943+00:00",
+  "started_at": "2026-10-25T08:20:01.308355+00:00",
   "execution_environment": "github_actions",
   "repository": "randogelist/ISING_CRITICALITY",
-  "commit": "6938db28d6b01da3dd1037a58d42bdf00b7dda3d",
-  "run_id": "40174368336",
+  "commit": "afe998c18dd8137c373982f7b6c7f944145af573",
+  "run_id": "40176094806",
   "run_attempt": "1",
-  "run_url": "https://github.com/randogelist/ISING_CRITICALITY/actions/runs/40174368336",
+  "run_url": "https://github.com/randogelist/ISING_CRITICALITY/actions/runs/40176094806",
   "runner_os": "Linux",
   "runner_arch": "X64",
-  "finished_at": "2026-10-25T07:54:03.489614+00:00"
+  "finished_at": "2026-10-25T08:20:05.752785+00:00"
 }

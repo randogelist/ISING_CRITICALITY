@@ -1,9 +1,9 @@
 # Formal scope
 
 Lean compilation and axiom auditing are restricted to GitHub Actions.
-[CI run 40174368336](https://github.com/randogelist/ISING_CRITICALITY/actions/runs/40174368336)
-passed for source commit `6938db28d6b01da3dd1037a58d42bdf00b7dda3d`: all 17 modules
-compiled and the audit allowed only `propext`, `Classical.choice`, and `Quot.sound`.
+[CI run 40176094806](https://github.com/randogelist/ISING_CRITICALITY/actions/runs/40176094806)
+passed for source commit `afe998c18dd8137c373982f7b6c7f944145af573`: all 18 modules passed (3 compiled, 15 reused)
+and the audit allowed only `propext`, `Classical.choice`, and `Quot.sound`.
 The [downloaded proof receipt](../audit/build-receipt.json) records the compiler,
 Mathlib pin, run identity, and source hashes. Earlier local receipts are historical
 only. The statements below preserve the distinction between the certified formula
@@ -139,3 +139,10 @@ particular closed square-loop expression with its limit.
 
 Benchmark agreement is assessed numerically with explicit source
 conventions and relative errors. It does not discharge these open proofs.
+
+## Arithmetic results
+
+The [irrationality proofs and scope](irrationality.md) distinguish the Lean-certified
+planar formula and factorial-cell criterion from the classical q=3 square-loop
+transcendence proof. No unconditional irrationality theorem for the higher-dimensional
+physical critical threshold is claimed.

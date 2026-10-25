@@ -1,32 +1,13 @@
---- PCD.Q3Defs ---
+--- IsingCriticality.Irrationality ---
+IsingCriticality/Irrationality.lean:35:32: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
---- PCD.Q3BaseBounds ---
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+IsingCriticality/Irrationality.lean:109:24: warning: Unused tactic linter: `ring` does nothing
 
---- PCD.Q3D3 ---
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+IsingCriticality/Irrationality.lean:109:24: warning: this tactic is never executed
 
---- PCD.Q3D4 ---
-
---- PCD.Q3D5 ---
-
---- PCD.Q3D6 ---
-
---- PCD.Q3D7 ---
-
---- PCD.Q3D8 ---
-
---- PCD.Q3D9 ---
-
---- PCD.Q3D10 ---
-
---- PCD.Q3D11 ---
-
---- PCD.Q3Aggregate ---
-
---- IsingCriticality.Approximants ---
-
---- IsingCriticality.FinitePartition ---
-
---- IsingCriticality.Identification ---
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
 
 --- IsingCriticality ---
 
@@ -93,4 +74,17 @@
 'IsingCriticality.concreteWiredRoots_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
 'IsingCriticality.canonicalWiredRoot_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
 'IsingCriticality.canonicalWiredRoots_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.irrational_odds_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.squareLatticeAnchor_irrational_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.squareLatticeAnchor_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.squareLatticeAnchor_three_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.squareLatticeAnchor_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.squareLatticeAnchor_one_not_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_ratCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_ratCast_not_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.gp4_natCast_not_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsingCriticality.irrational_of_eventual_scaled_factorial_cells' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'IsingCriticality.irrational_of_eventual_factorial_cells' depends on axioms: [propext, Classical.choice, Quot.sound]
 AXIOM_AUDIT_END
