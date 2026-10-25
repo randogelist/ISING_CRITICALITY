@@ -47,7 +47,7 @@ paths = [out, mathlib/'.lake/build/lib/lean']
 for base in [mathlib/'.lake/packages',ROOT/'.lake/packages']:
     paths += sorted(base.glob('*/.lake/build/lib/lean'))
 env = dict(os.environ, LEAN_PATH=os.pathsep.join(map(str,paths)))
-modules = ['PCD.Q3Defs','PCD.Q3BaseBounds']+[f'PCD.Q3D{d}' for d in range(3,12)]+['PCD.Q3Aggregate','IsingCriticality.Approximants','IsingCriticality.FinitePartition','IsingCriticality.Identification','IsingCriticality','Audit']
+modules = ['PCD.Q3Defs','PCD.Q3BaseBounds']+[f'PCD.Q3D{d}' for d in range(3,12)]+['PCD.Q3Aggregate','IsingCriticality.Approximants','IsingCriticality.FinitePartition','IsingCriticality.Identification','IsingCriticality.Irrationality','IsingCriticality','Audit']
 receipt_path = ROOT/'audit/build-receipt.json'
 old = json.loads(receipt_path.read_text()) if receipt_path.exists() else {}
 compile_flags = ['-o']

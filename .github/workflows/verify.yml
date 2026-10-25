@@ -21,7 +21,9 @@ jobs:
             ~/.cache/mathlib
             audit/build-receipt.json
           key: lean-ci-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'scripts/build_lean.py') }}-${{ hashFiles('**/*.lean') }}
-          restore-keys: lean-ci-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'scripts/build_lean.py') }}-
+          restore-keys: |
+            lean-ci-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'scripts/build_lean.py') }}-
+            lean-ci-${{ runner.os }}-${{ runner.arch }}-
       - name: Fetch pinned dependencies and precompiled Mathlib
         run: |
           lake update

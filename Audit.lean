@@ -63,4 +63,16 @@ import IsingCriticality
 #print axioms IsingCriticality.canonicalWiredRoot_spec
 #print axioms IsingCriticality.canonicalWiredRoots_tendsto
 
+#print axioms IsingCriticality.irrational_odds_iff
+#print axioms IsingCriticality.squareLatticeAnchor_irrational_iff
+#print axioms IsingCriticality.squareLatticeAnchor_two_irrational
+#print axioms IsingCriticality.squareLatticeAnchor_three_irrational
+#print axioms IsingCriticality.squareLatticeAnchor_one
+#print axioms IsingCriticality.squareLatticeAnchor_one_not_irrational
+#print axioms IsingCriticality.gp4_ratCast
+#print axioms IsingCriticality.gp4_ratCast_not_irrational
+#print axioms IsingCriticality.gp4_natCast_not_irrational
+#print axioms IsingCriticality.irrational_of_eventual_scaled_factorial_cells
+#print axioms IsingCriticality.irrational_of_eventual_factorial_cells
+
 #eval IO.println "AXIOM_AUDIT_END"
